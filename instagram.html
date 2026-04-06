@@ -18,7 +18,7 @@
   --cream:#f7f4ef;--cream2:#ede8df;--ink:#1a1612;
 }
 html,body{width:100%;overflow-x:hidden;}
-body{background:var(--navy);font-family:'Raleway',sans-serif;cursor:none;}
+body{background:var(--navy);font-family:'Raleway',sans-serif;}
 
 /* GRAIN */
 body::after{content:'';position:fixed;inset:0;z-index:9990;pointer-events:none;opacity:.028;
@@ -29,9 +29,6 @@ background-size:180px 180px;mix-blend-mode:overlay;}
 ::-webkit-scrollbar-thumb{background:rgba(201,168,76,.35);border-radius:2px;}
 ::-webkit-scrollbar-thumb:hover{background:var(--gold);}
 
-/* CURSOR */
-#cur{position:fixed;width:10px;height:10px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .25s,height .25s;}
-#cur2{position:fixed;width:38px;height:38px;border:1px solid rgba(201,168,76,.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .25s,height .25s;}
 
 @keyframes shimmer{to{background-position:220% center;}}
 @keyframes fup{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:none;}}
@@ -469,8 +466,7 @@ nav a.active{color:var(--gold);}
 </head>
 <body>
 
-<div id="cur"></div>
-<div id="cur2"></div>
+
 
 <!-- HEADER -->
 <header id="hdr">
@@ -1054,15 +1050,7 @@ Designed & Developed by
 <a href="#" id="back-top"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></a>
 
 <script>
-/* CURSOR */
-const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
-(function t(){rx+=(mx-rx)*.13;ry+=(my-ry)*.13;cur2.style.left=rx+'px';cur2.style.top=ry+'px';requestAnimationFrame(t);})();
-document.querySelectorAll('a,button').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';cur2.style.width='56px';cur2.style.height='56px';});
-  el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';cur2.style.width='38px';cur2.style.height='38px';});
-});
+
 
 /* HEADER */
 window.addEventListener('scroll',()=>document.getElementById('hdr').classList.toggle('solid',scrollY>60),{passive:true});
