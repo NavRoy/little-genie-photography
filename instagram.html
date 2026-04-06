@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Instagram | Little Genie Photography Studio — Kurnool, AP</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.png ">
+<meta name="description" content="Follow Little Genie Photography Studio on Instagram — Kurnool's finest wedding, portrait, maternity and newborn photography. @little_genie_photography"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;600;700&family=Cinzel+Decorative:wght@400;700&family=Dancing+Script:wght@500;600;700&family=EB+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --gold:#C9A84C;--gold2:#F0D080;--gold3:#8B6A1F;
+  --navy:#07080F;--white:#FFFFFF;
+  --cream:#f7f4ef;--cream2:#ede8df;--ink:#1a1612;
+}
+html,body{width:100%;overflow-x:hidden;}
+body{background:var(--navy);font-family:'Raleway',sans-serif;cursor:none;}
+
+/* GRAIN */
+body::after{content:'';position:fixed;inset:0;z-index:9990;pointer-events:none;opacity:.028;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+background-size:180px 180px;mix-blend-mode:overlay;}
+::selection{background:rgba(201,168,76,.25);color:#F0D080;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:var(--navy);}
+::-webkit-scrollbar-thumb{background:rgba(201,168,76,.35);border-radius:2px;}
+::-webkit-scrollbar-thumb:hover{background:var(--gold);}
+
+/* CURSOR */
+#cur{position:fixed;width:10px;height:10px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .25s,height .25s;}
+#cur2{position:fixed;width:38px;height:38px;border:1px solid rgba(201,168,76,.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .25s,height .25s;}
+
+@keyframes shimmer{to{background-position:220% center;}}
+@keyframes fup{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:none;}}
+
+/* ══ HEADER ══ */
+#hdr{position:fixed;top:0;left:0;width:100%;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:88px;transition:background .5s,height .4s,border-color .5s;border-bottom:1px solid transparent;}
+#hdr.solid{background:rgba(7,8,15,.93);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom-color:rgba(201,168,76,.15);height:78px;}
+.logo{display:flex;align-items:center;text-decoration:none;}
+.logo-img{height:80px;width:auto;object-fit:contain;transition:transform .4s ease;}
+.logo:hover .logo-img{transform:scale(1.05);}
+nav{display:flex;align-items:center;gap:2px;}
+nav a{font-family:'Raleway',sans-serif;font-weight:300;font-size:10px;letter-spacing:3.5px;text-transform:uppercase;text-decoration:none;color:rgba(255,255,255,.75);padding:10px 18px;position:relative;transition:color .3s;}
+nav a::after{content:'';position:absolute;bottom:4px;left:50%;transform:translateX(-50%);height:1px;width:0;background:var(--gold);transition:width .4s cubic-bezier(.16,1,.3,1);}
+nav a:hover,nav a.active{color:var(--gold2);}
+nav a:hover::after,nav a.active::after{width:calc(100% - 36px);}
+nav a.active{color:var(--gold);}
+.nav-book{margin-left:16px;border:1px solid var(--gold)!important;color:var(--gold)!important;padding:10px 28px!important;overflow:hidden;position:relative;}
+.nav-book::before{content:'';position:absolute;inset:0;background:var(--gold);transform:translateX(-100%);transition:transform .4s cubic-bezier(.16,1,.3,1);}
+.nav-book:hover::before{transform:translateX(0);}
+.nav-book span{position:relative;z-index:1;}
+.nav-book:hover span{color:var(--navy)!important;}
+.nav-book::after{display:none!important;}
+.menu-btn{display:none;width:32px;height:22px;position:relative;cursor:pointer;z-index:1200;}
+.menu-btn span{position:absolute;width:100%;height:2px;background:var(--gold);transition:all .4s;}
+.menu-btn span:nth-child(1){top:0;}.menu-btn span:nth-child(2){bottom:0;}
+.menu-btn.active span:nth-child(1){transform:rotate(45deg);top:10px;}
+.menu-btn.active span:nth-child(2){transform:rotate(-45deg);bottom:10px;}
+
+/* ══ HERO ══ */
+.ig-hero{
+  position:relative;width:100%;height:72vh;min-height:500px;
+  overflow:hidden;display:flex;align-items:flex-end;justify-content:center;
+}
+.ih-bg{
+  position:absolute;inset:0;
+  background-image:url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1920&q=85&auto=format&fit=crop');
+  background-size:cover;background-position:center;
+  filter:brightness(.22) saturate(.7);
+  transform:scale(1.06);animation:heroZoom 14s ease-out forwards;
+}
+@keyframes heroZoom{to{transform:scale(1);}}
+.ig-hero::before{
+  content:'';position:absolute;inset:0;z-index:2;
+  background:linear-gradient(180deg,rgba(7,8,15,.65) 0%,transparent 28%,transparent 50%,rgba(7,8,15,.97) 100%),
+  radial-gradient(ellipse 90% 90% at 50% 50%,transparent 20%,rgba(7,8,15,.5) 100%);
+}
+.ih-grid{position:absolute;inset:0;z-index:3;background-image:linear-gradient(rgba(201,168,76,.014) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.014) 1px,transparent 1px);background-size:80px 80px;}
+.ih-content{position:relative;z-index:10;text-align:center;padding:0 clamp(20px,5vw,80px) clamp(52px,7vw,96px);width:100%;}
+.ih-eyebrow{font-family:'Raleway',sans-serif;font-weight:200;font-size:8.5px;letter-spacing:9px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:flex;align-items:center;justify-content:center;gap:18px;opacity:0;animation:fup .9s .3s forwards;}
+.ih-eyebrow::before,.ih-eyebrow::after{content:'';height:1px;width:28px;background:var(--gold);}
+.ih-title{font-family:'Cinzel',serif;font-weight:300;font-size:clamp(2.6rem,7.5vw,7rem);letter-spacing:12px;color:var(--white);text-transform:uppercase;line-height:1;text-shadow:0 2px 40px rgba(0,0,0,.7);opacity:0;animation:fup 1s .5s forwards;}
+.ih-title span{background:linear-gradient(120deg,#F0D080,#C9A84C,#F0D080,#8B6A1F);background-size:220% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 5s linear infinite;font-weight:700;}
+.ih-handle{
+  display:inline-flex;align-items:center;gap:10px;margin-top:22px;
+  font-family:'Raleway',sans-serif;font-weight:300;font-size:12px;letter-spacing:5px;
+  text-transform:uppercase;color:rgba(255,255,255,.45);text-decoration:none;
+  transition:color .3s;opacity:0;animation:fup .9s .85s forwards;
+}
+.ih-handle:hover{color:var(--gold);}
+.ih-handle i{font-size:16px;color:var(--gold);}
+.ih-stats{display:flex;align-items:center;justify-content:center;margin-top:28px;opacity:0;animation:fup .9s 1.05s forwards;}
+.ih-stat{padding:0 clamp(14px,2.5vw,32px);}
+.ih-stat:not(:last-child){border-right:1px solid rgba(201,168,76,.2);}
+.ih-sn{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(1rem,2vw,1.7rem);color:var(--gold);line-height:1;display:block;}
+.ih-sn sup{font-size:.5em;color:var(--gold2);}
+.ih-sk{font-family:'Raleway',sans-serif;font-weight:300;font-size:7px;letter-spacing:3.5px;text-transform:uppercase;color:rgba(255,255,255,.32);margin-top:4px;display:block;}
+
+/* ══ SCROLL REVEAL ══ */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .85s ease,transform .85s cubic-bezier(.16,1,.3,1);}
+.rv.on{opacity:1;transform:none;}
+.rv-l{opacity:0;transform:translateX(-28px);transition:opacity .85s ease,transform .85s cubic-bezier(.16,1,.3,1);}
+.rv-l.on{opacity:1;transform:none;}
+.rv-r{opacity:0;transform:translateX(28px);transition:opacity .85s ease,transform .85s cubic-bezier(.16,1,.3,1);}
+.rv-r.on{opacity:1;transform:none;}
+.d1{transition-delay:.1s}.d2{transition-delay:.22s}.d3{transition-delay:.34s}.d4{transition-delay:.46s}.d5{transition-delay:.58s}
+
+/* ══ SECTION COMMONS ══ */
+.sec-eyebrow{display:flex;align-items:center;gap:14px;justify-content:center;font-family:'Raleway',sans-serif;font-weight:300;font-size:8.5px;letter-spacing:7px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.sec-eyebrow::before,.sec-eyebrow::after{content:'';height:1px;width:24px;background:var(--gold);}
+.sec-title{font-family:'Cinzel',serif;font-weight:300;font-size:clamp(1.6rem,3.5vw,3rem);letter-spacing:8px;color:var(--white);text-align:center;text-transform:uppercase;margin-bottom:10px;}
+.sec-title span{color:var(--gold);}
+.sec-rule{display:flex;align-items:center;gap:14px;justify-content:center;margin:18px 0 0;}
+.sr-line{width:56px;height:1px;background:linear-gradient(90deg,transparent,var(--gold));}
+.sr-line:last-child{background:linear-gradient(90deg,var(--gold),transparent);}
+.sr-gem{width:7px;height:7px;background:var(--gold);transform:rotate(45deg);box-shadow:0 0 12px rgba(201,168,76,.7);}
+
+/* ══ PROFILE SECTION ══ */
+#ig-profile{
+  background:#040508;
+  padding:72px clamp(24px,6vw,80px) 80px;
+  position:relative;overflow:hidden;
+}
+#ig-profile::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.2),transparent);}
+.profile-inner{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:clamp(32px,5vw,72px);
+  align-items:center;
+  max-width:1000px;margin:0 auto;
+}
+/* Avatar */
+.profile-avatar-wrap{position:relative;flex-shrink:0;}
+.profile-avatar{
+  width:160px;height:160px;border-radius:50%;overflow:hidden;
+  border:2px solid transparent;
+  background:linear-gradient(#040508,#040508) padding-box,
+    linear-gradient(135deg,#F0D080,#C9A84C,#8B6A1F,#F0D080) border-box;
+  position:relative;
+}
+/* Instagram-style gradient ring */
+.profile-avatar::before{
+  content:'';position:absolute;inset:-4px;border-radius:50%;
+  background:linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7);
+  z-index:-1;
+}
+.profile-avatar img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%;}
+/* Verified badge */
+.profile-verified{
+  position:absolute;bottom:8px;right:8px;
+  width:30px;height:30px;background:#1877F2;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  border:2px solid #040508;
+}
+.profile-verified svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.5;}
+
+/* Profile text */
+.profile-handle{font-family:'Cinzel Decorative',serif;font-size:clamp(1.1rem,2.2vw,1.8rem);font-weight:700;letter-spacing:2px;background:linear-gradient(120deg,#F0D080,#C9A84C,#F0D080,#8B6A1F);background-size:220% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 5s linear infinite;margin-bottom:6px;}
+.profile-name{font-family:'Raleway',sans-serif;font-weight:300;font-size:10px;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:20px;}
+.profile-stats{display:flex;gap:0;margin-bottom:20px;}
+.ps-item{text-align:center;padding-right:clamp(20px,3vw,44px);}
+.ps-item:not(:last-child){border-right:1px solid rgba(201,168,76,.12);margin-right:clamp(20px,3vw,44px);}
+.ps-num{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(1.1rem,2vw,1.6rem);color:var(--white);line-height:1;display:block;}
+.ps-label{font-family:'Raleway',sans-serif;font-weight:300;font-size:7.5px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.32);margin-top:3px;display:block;}
+.profile-bio{font-family:'EB Garamond',serif;font-style:italic;font-size:clamp(14px,1.4vw,16px);line-height:1.8;color:rgba(255,255,255,.45);margin-bottom:24px;max-width:480px;}
+.profile-bio strong{color:var(--gold);font-style:normal;}
+.profile-link{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:'Raleway',sans-serif;font-weight:500;font-size:8.5px;letter-spacing:4px;text-transform:uppercase;
+  text-decoration:none;color:var(--navy);
+  background:linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7);
+  padding:13px 28px;transition:transform .35s,box-shadow .35s;
+}
+.profile-link:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(238,42,123,.3);}
+.profile-link i{font-size:15px;}
+
+/* ══ HIGHLIGHTS / STORIES ══ */
+#ig-highlights{
+  background:var(--navy);
+  padding:72px clamp(24px,6vw,80px) 80px;
+  position:relative;overflow:hidden;
+}
+#ig-highlights::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.15),transparent);}
+.hl-header{text-align:center;margin-bottom:52px;}
+.hl-row{
+  display:flex;gap:clamp(16px,3vw,36px);
+  overflow-x:auto;scrollbar-width:none;
+  padding:8px 0 20px;
+  justify-content:center;flex-wrap:wrap;
+}
+.hl-row::-webkit-scrollbar{display:none;}
+.hl-item{
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  cursor:none;flex-shrink:0;
+}
+.hl-ring{
+  width:84px;height:84px;border-radius:50%;
+  background:linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7);
+  padding:2.5px;
+  transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s;
+}
+.hl-ring:hover{transform:scale(1.1);box-shadow:0 12px 36px rgba(238,42,123,.28);}
+.hl-inner{
+  width:100%;height:100%;border-radius:50%;overflow:hidden;
+  border:3px solid var(--navy);
+}
+.hl-inner img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.85) saturate(.9);transition:filter .4s;}
+.hl-ring:hover .hl-inner img{filter:brightness(1) saturate(1.1);}
+.hl-label{font-family:'Raleway',sans-serif;font-weight:300;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.4);text-align:center;}
+
+/* ══ MAIN INSTAGRAM GRID ══ */
+#ig-feed{
+  background:var(--navy);
+  padding:0 clamp(14px,3.5vw,52px) 80px;
+  position:relative;
+}
+.feed-header{
+  text-align:center;
+  padding:60px 0 48px;
+}
+/* filter tabs */
+.feed-filters{display:flex;gap:4px;justify-content:center;margin-bottom:40px;flex-wrap:wrap;}
+.ff-tab{font-family:'Raleway',sans-serif;font-weight:300;font-size:8.5px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.4);background:transparent;border:1px solid rgba(255,255,255,.08);padding:10px 24px;cursor:none;transition:all .35s;}
+.ff-tab:hover,.ff-tab.active{color:var(--navy);background:var(--gold);border-color:var(--gold);}
+
+/* 3-col masonry */
+.ig-grid{
+  columns:3;column-gap:4px;
+}
+.ig-post{
+  break-inside:avoid;
+  display:inline-block;width:100%;
+  margin-bottom:4px;
+  position:relative;overflow:hidden;
+  cursor:none;
+}
+.ig-post img{width:100%;height:auto;display:block;filter:brightness(.82) saturate(.9);transition:transform .7s cubic-bezier(.25,.8,.25,1),filter .5s;}
+.ig-post:hover img{transform:scale(1.06);filter:brightness(.38) saturate(1.1);}
+.ig-post-over{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+  opacity:0;transition:opacity .4s;
+  background:rgba(7,8,15,.3);
+}
+.ig-post:hover .ig-post-over{opacity:1;}
+.ig-post-icons{display:flex;gap:22px;align-items:center;}
+.ig-post-icons span{display:flex;align-items:center;gap:6px;font-family:'Cinzel',serif;font-size:12px;font-weight:600;color:var(--white);}
+.ig-post-icons svg{width:20px;height:20px;fill:var(--white);stroke:none;}
+/* Category label */
+.ig-post-cat{font-family:'Raleway',sans-serif;font-size:7px;letter-spacing:5px;text-transform:uppercase;color:rgba(201,168,76,.85);margin-bottom:0;}
+/* Gold top border */
+.ig-post::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1);z-index:3;}
+.ig-post:hover::before{transform:scaleX(1);}
+/* Featured (span 2 rows) */
+.ig-post.featured{grid-row:span 2;}
+
+/* ══ LIGHTBOX ══ */
+#igLightbox{
+  position:fixed;inset:0;z-index:98000;
+  background:rgba(4,5,8,.97);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s;
+}
+#igLightbox.open{opacity:1;visibility:visible;}
+.igl-wrap{position:relative;max-width:88vw;max-height:88vh;display:flex;align-items:center;justify-content:center;}
+.igl-wrap img{max-width:88vw;max-height:88vh;object-fit:contain;display:block;border:1px solid rgba(201,168,76,.1);box-shadow:0 32px 80px rgba(0,0,0,.8);transition:opacity .35s;}
+.igl-meta{position:absolute;bottom:-52px;left:0;right:0;text-align:center;}
+.igl-cat{font-family:'Raleway',sans-serif;font-size:7.5px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:3px;}
+.igl-caption{font-family:'EB Garamond',serif;font-style:italic;font-size:clamp(.72rem,1.1vw,.88rem);letter-spacing:2px;color:rgba(255,255,255,.45);}
+.igl-close{position:fixed;top:22px;right:24px;width:44px;height:44px;border:1px solid rgba(201,168,76,.22);background:rgba(7,8,15,.7);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;cursor:none;z-index:10;transition:border-color .3s,transform .3s;}
+.igl-close:hover{border-color:var(--gold);transform:rotate(90deg);}
+.igl-close svg{width:16px;height:16px;stroke:var(--gold);fill:none;stroke-width:1.8;}
+.igl-arr{position:fixed;top:50%;transform:translateY(-50%);width:50px;height:50px;border:1px solid rgba(201,168,76,.2);background:rgba(7,8,15,.5);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;cursor:none;z-index:10;transition:border-color .3s,background .3s;}
+.igl-arr:hover{border-color:var(--gold);background:rgba(201,168,76,.1);}
+#iglPrev{left:18px;}#iglNext{right:18px;}
+.igl-arr svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.5;}
+.igl-ctr{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;color:rgba(201,168,76,.45);}
+
+/* ══ REEL STRIP ══ */
+#ig-reels{
+  background:#040508;
+  padding:72px clamp(24px,6vw,80px) 80px;
+  position:relative;overflow:hidden;
+}
+#ig-reels::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.15),transparent);}
+.reel-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:4px;margin-top:48px;
+}
+.reel-item{
+  position:relative;overflow:hidden;
+  aspect-ratio:9/16;
+  cursor:none;background:#13131e;
+}
+.reel-item img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.7) saturate(.85);transition:transform .7s cubic-bezier(.25,.8,.25,1),filter .5s;}
+.reel-item:hover img{transform:scale(1.06);filter:brightness(.35) saturate(1.1);}
+.reel-item-over{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;transition:opacity .4s;}
+.reel-item:hover .reel-item-over{opacity:1;}
+.reel-play{width:52px;height:52px;border:1.5px solid rgba(201,168,76,.6);border-radius:50%;background:rgba(7,8,15,.55);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;transition:border-color .3s,transform .3s;}
+.reel-play:hover{border-color:var(--gold);transform:scale(1.1);}
+.reel-play svg{width:18px;height:18px;fill:var(--gold);margin-left:3px;}
+.reel-duration{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:rgba(201,168,76,.6);}
+/* Gold top line */
+.reel-item::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:transform .45s;z-index:3;}
+.reel-item:hover::before{transform:scaleX(1);}
+/* Reel badge top-left */
+.reel-badge{position:absolute;top:10px;left:10px;z-index:2;background:rgba(7,8,15,.65);backdrop-filter:blur(6px);border:1px solid rgba(201,168,76,.2);padding:4px 10px;display:flex;align-items:center;gap:5px;font-family:'Raleway',sans-serif;font-size:7px;letter-spacing:3px;text-transform:uppercase;color:rgba(201,168,76,.7);}
+.reel-badge svg{width:11px;height:11px;stroke:var(--gold);fill:none;stroke-width:1.8;}
+
+/* ══ FOLLOW STRIP ══ */
+#ig-follow{
+  background:var(--navy);
+  position:relative;overflow:hidden;
+}
+#ig-follow::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.18),transparent);}
+.follow-inner{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  min-height:480px;
+}
+/* LEFT: gradient bg panel */
+.follow-left{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#f9ce34 0%,#ee2a7b 50%,#6228d7 100%);
+}
+.follow-left::after{content:'';position:absolute;inset:0;background:rgba(4,5,8,.72);}
+.follow-left-img{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1492671527719-9d1e07e534b4?w=900&q=85&auto=format&fit=crop');background-size:cover;background-position:center;mix-blend-mode:overlay;opacity:.35;}
+.follow-promo{position:relative;z-index:2;padding:clamp(40px,5vw,64px);display:flex;flex-direction:column;justify-content:center;height:100%;}
+.follow-promo-eyebrow{font-family:'Raleway',sans-serif;font-weight:200;font-size:8px;letter-spacing:7px;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+.follow-promo-eyebrow::before{content:'';width:20px;height:1px;background:rgba(255,255,255,.5);flex-shrink:0;}
+.follow-promo h3{font-family:'Cinzel',serif;font-weight:300;font-size:clamp(1.5rem,3vw,2.6rem);letter-spacing:5px;color:var(--white);text-transform:uppercase;line-height:1.15;margin-bottom:18px;}
+.follow-promo h3 em{display:block;color:rgba(255,255,255,.55);font-size:.58em;letter-spacing:8px;font-weight:300;margin-bottom:6px;font-style:normal;}
+.follow-promo p{font-family:'EB Garamond',serif;font-style:italic;font-size:clamp(14px,1.5vw,17px);color:rgba(255,255,255,.5);line-height:1.78;max-width:340px;margin-bottom:32px;}
+.follow-ig-btn{
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:'Raleway',sans-serif;font-weight:500;font-size:8.5px;letter-spacing:5px;text-transform:uppercase;
+  text-decoration:none;color:var(--white);
+  background:rgba(255,255,255,.12);backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.3);
+  padding:14px 28px;
+  transition:background .35s,border-color .35s,transform .35s;
+  align-self:flex-start;
+}
+.follow-ig-btn:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.6);transform:translateY(-3px);}
+.follow-ig-btn i{font-size:16px;}
+
+/* RIGHT: feed preview strip */
+.follow-right{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:3px;
+  background:var(--navy);
+}
+.follow-thumb{position:relative;overflow:hidden;aspect-ratio:1;}
+.follow-thumb img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.75) saturate(.85);transition:transform .6s cubic-bezier(.25,.8,.25,1),filter .5s;}
+.follow-thumb:hover img{transform:scale(1.08);filter:brightness(.4) saturate(1.1);}
+.follow-thumb-over{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .4s;}
+.follow-thumb:hover .follow-thumb-over{opacity:1;}
+.follow-thumb-over i{font-size:22px;color:var(--gold);}
+
+/* ══ TIPS / HOW TO FIND US ══ */
+#ig-findus{
+  background:var(--cream);
+  padding:72px clamp(24px,6vw,80px) 80px;
+  position:relative;
+}
+#ig-findus::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(139,106,31,.18),transparent);}
+.findus-inner{max-width:960px;margin:0 auto;}
+.findus-header{text-align:center;margin-bottom:52px;}
+.findus-header .sec-title{color:var(--ink);}
+.findus-header .sec-eyebrow{color:var(--gold3);}
+.findus-header .sec-eyebrow::before,.findus-header .sec-eyebrow::after{background:var(--gold3);}
+.findus-header .sr-line{background:linear-gradient(90deg,transparent,var(--gold3));}
+.findus-header .sr-line:last-child{background:linear-gradient(90deg,var(--gold3),transparent);}
+.findus-header .sr-gem{background:var(--gold3);box-shadow:0 0 12px rgba(139,106,31,.4);}
+.findus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
+.fu-card{background:var(--navy);padding:clamp(24px,3.5vw,40px) clamp(20px,3vw,32px);position:relative;overflow:hidden;transition:transform .4s cubic-bezier(.16,1,.3,1);}
+.fu-card:hover{transform:translateY(-5px);}
+.fu-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1);}
+.fu-card:hover::before{transform:scaleX(1);}
+.fu-icon{width:44px;height:44px;border:1px solid rgba(201,168,76,.2);display:flex;align-items:center;justify-content:center;margin-bottom:18px;transition:border-color .3s,background .3s;}
+.fu-card:hover .fu-icon{border-color:var(--gold);background:rgba(201,168,76,.08);}
+.fu-icon svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.5;}
+.fu-title{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(.75rem,1.2vw,.9rem);letter-spacing:2.5px;text-transform:uppercase;color:var(--white);margin-bottom:10px;}
+.fu-desc{font-family:'EB Garamond',serif;font-style:italic;font-size:clamp(13px,1.2vw,15px);line-height:1.8;color:rgba(255,255,255,.42);}
+
+/* ══ CTA ══ */
+#ig-cta{
+  background:var(--navy);
+  padding:80px clamp(24px,6vw,80px);
+  text-align:center;
+  position:relative;overflow:hidden;
+}
+#ig-cta::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.2),transparent);}
+#ig-cta::after{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.05),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
+.cta-inner{position:relative;z-index:1;max-width:680px;margin:0 auto;}
+.cta-sub{font-family:'EB Garamond',serif;font-style:italic;font-size:clamp(14px,1.6vw,18px);color:rgba(255,255,255,.38);margin:16px 0 40px;line-height:1.7;}
+.cta-btns{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
+.btn-ig{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:'Raleway',sans-serif;font-weight:500;font-size:8.5px;letter-spacing:5px;text-transform:uppercase;
+  text-decoration:none;color:var(--white);
+  background:linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7);
+  padding:15px 36px;transition:transform .35s,box-shadow .35s;
+}
+.btn-ig:hover{transform:translateY(-3px);box-shadow:0 16px 44px rgba(238,42,123,.32);}
+.btn-ig i{font-size:16px;}
+.btn-o{font-family:'Raleway',sans-serif;font-weight:400;font-size:9px;letter-spacing:5px;text-transform:uppercase;text-decoration:none;padding:15px 44px;display:inline-block;background:transparent;border:1px solid rgba(201,168,76,.45);color:var(--gold);position:relative;overflow:hidden;transition:border-color .35s,transform .35s;}
+.btn-o::before{content:'';position:absolute;inset:0;background:rgba(201,168,76,.08);opacity:0;transition:opacity .35s;}
+.btn-o:hover{border-color:var(--gold);transform:translateY(-3px);}
+.btn-o:hover::before{opacity:1;}
+
+
+/* STICKY BAR */
+.sticky-bar{position:fixed;bottom:0;left:0;right:0;z-index:800;background:rgba(4,5,8,.94);backdrop-filter:blur(20px);border-top:1px solid rgba(201,168,76,.12);}
+.sticky-bar-inner{display:flex;align-items:stretch;height:64px;}
+.sb-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;position:relative;overflow:hidden;transition:background .3s;}
+.sb-btn:hover{background:rgba(201,168,76,.06);}
+.sb-div{width:1px;background:rgba(201,168,76,.1);flex-shrink:0;}
+.sb-icon{width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.sb-icon svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.6;}
+.sb-wa .sb-icon svg{stroke:none;}
+.sb-label{font-family:'Raleway',sans-serif;font-weight:400;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.55);}
+.sb-live{position:absolute;top:12px;right:clamp(14px,2vw,24px);width:6px;height:6px;background:#22c55e;border-radius:50%;box-shadow:0 0 8px rgba(34,197,94,.6);}
+.sb-live::before{content:'';position:absolute;inset:-4px;border-radius:50%;background:rgba(34,197,94,.2);animation:livePulse 1.8s ease-out infinite;}
+@keyframes livePulse{0%{transform:scale(1);opacity:1;}100%{transform:scale(2.2);opacity:0;}}
+.wa-float-left{position:fixed;bottom:80px;left:24px;z-index:850;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 8px 28px rgba(37,211,102,.35);transition:transform .3s;}
+.wa-float-left:hover{transform:scale(1.1);}
+.wa-float-left i{font-size:22px;color:white;}
+#back-top{position:fixed;bottom:84px;right:36px;z-index:850;width:44px;height:44px;background:rgba(7,8,15,.82);backdrop-filter:blur(12px);border:1px solid rgba(201,168,76,.28);display:flex;align-items:center;justify-content:center;text-decoration:none;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .4s,transform .4s cubic-bezier(.16,1,.3,1),border-color .3s;}
+#back-top.show{opacity:1;transform:none;pointer-events:all;}
+#back-top:hover{border-color:var(--gold);}
+#back-top svg{width:16px;height:16px;stroke:var(--gold);fill:none;stroke-width:2;}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:960px){
+  #hdr{padding:0 22px;}
+  .nav-links{display:none;}
+  .menu-btn{display:block;}
+  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:0;right:0;height:100vh;width:280px;background:rgba(7,8,15,.98);backdrop-filter:blur(20px);padding:120px 40px;gap:22px;z-index:1100;}
+  .nav-links.open a{font-size:13px;letter-spacing:3px;color:white;}
+  #cur,#cur2{display:none!important;}
+  body,a,button{cursor:auto!important;}
+  a,button{cursor:pointer!important;}
+  .profile-inner{grid-template-columns:1fr;text-align:center;}
+  .profile-stats{justify-content:center;}
+  .profile-bio{margin:0 auto 24px;}
+  .profile-link{align-self:center;}
+  .ig-grid{columns:2;}
+  .reel-grid{grid-template-columns:repeat(2,1fr);}
+  .follow-inner{grid-template-columns:1fr;}
+  .follow-right{grid-template-columns:repeat(3,1fr);}
+  .findus-grid{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:36px;}
+}
+@media(max-width:600px){
+  .ig-grid{columns:2;column-gap:3px;}
+  .ig-post{margin-bottom:3px;}
+  .reel-grid{grid-template-columns:repeat(2,1fr);}
+  .findus-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .follow-right{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur2"></div>
+
+<!-- HEADER -->
+<header id="hdr">
+  <a href="index.html" class="logo">
+    <img src="little-genie.png" class="logo-img" alt="Little Genie Photography"/>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="instagram.html" class="active">Instagram</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html" class="nav-book"><span>Book Now</span></a>
+  </nav>
+  <div class="menu-btn" id="menuBtn"><span></span><span></span></div>
+</header>
+
+<!-- HERO -->
+<div class="ig-hero">
+  <div class="ih-bg"></div>
+  <div class="ih-grid"></div>
+  <div class="ih-content">
+    <div class="ih-eyebrow">Little Genie Photography Studio</div>
+    <h1 class="ih-title">Our <span>Instagram</span></h1>
+    <a href="https://www.instagram.com/little_genie_photography/" target="_blank" class="ih-handle">
+      <i class="fab fa-instagram"></i>
+      @little_genie_photography
+    </a>
+    <div class="ih-stats">
+      <div class="ih-stat"><span class="ih-sn">10K<sup>+</sup></span><span class="ih-sk">Followers</span></div>
+      <div class="ih-stat"><span class="ih-sn">500<sup>+</sup></span><span class="ih-sk">Posts</span></div>
+      <div class="ih-stat"><span class="ih-sn">350<sup>+</sup></span><span class="ih-sk">Happy Clients</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ PROFILE CARD ══ -->
+<section id="ig-profile">
+  <div class="profile-inner rv">
+    <div class="profile-avatar-wrap">
+      <div class="profile-avatar">
+        <img src="little-genie.png" onerror="this.src='https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&q=85&auto=format&fit=crop&crop=center'" alt="Little Genie Photography"/>
+      </div>
+      <div class="profile-verified">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+    </div>
+    <div>
+      <div class="profile-handle">little_genie_photography</div>
+      <div class="profile-name">Little Genie Photography Studio · Kurnool, AP</div>
+      <div class="profile-stats">
+        <div class="ps-item"><span class="ps-num">500+</span><span class="ps-label">Posts</span></div>
+        <div class="ps-item"><span class="ps-num">10K+</span><span class="ps-label">Followers</span></div>
+        <div class="ps-item"><span class="ps-num">350+</span><span class="ps-label">Following</span></div>
+      </div>
+      <p class="profile-bio">
+        📍 Kurnool, Andhra Pradesh<br/>
+        ✨ <strong>Weddings · Maternity · Newborn · Toddler · Portraits</strong><br/>
+        🎬 Capturing timeless stories since 2016<br/>
+        💌 DM or WhatsApp to book your session
+      </p>
+      <a href="https://www.instagram.com/little_genie_photography/" target="_blank" class="profile-link">
+        <i class="fab fa-instagram"></i>
+        Follow on Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STORY HIGHLIGHTS ══ -->
+<section id="ig-highlights">
+  <div class="hl-header">
+    <div class="sec-eyebrow rv">Story Highlights</div>
+    <h2 class="sec-title rv d1">Our <span>Highlights</span></h2>
+    <div class="sec-rule rv d2"><div class="sr-line"></div><div class="sr-gem"></div><div class="sr-line"></div></div>
+  </div>
+  <div class="hl-row">
+    <div class="hl-item rv d1">
+      <div class="hl-ring">
+        <div class="hl-inner"><img src="images/pre-wedding.jpg" onerror="this.src='https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=200&q=80&auto=format&fit=crop&crop=center'" alt="Pre-Wedding" loading="lazy"/></div>
+      </div>
+      <span class="hl-label">Pre-Wedding</span>
+    </div>
+    <div class="hl-item rv d2">
+      <div class="hl-ring">
+        <div class="hl-inner"><img src="images/wedding.JPG" onerror="this.src='https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=200&q=80&auto=format&fit=crop&crop=center'" alt="Weddings" loading="lazy"/></div>
+      </div>
+      <span class="hl-label">Weddings</span>
+    </div>
+    <div class="hl-item rv d3">
+      <div class="hl-ring">
+        <div class="hl-inner"><img src="images/maternity.jpg" onerror="this.src='https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=200&q=80&auto=format&fit=crop&crop=center'" alt="Maternity" loading="lazy"/></div>
+      </div>
+      <span class="hl-label">Maternity</span>
+    </div>
+    <div class="hl-item rv d4">
+      <div class="hl-ring">
+        <div class="hl-inner"><img src="images/new-born1.JPG" onerror="this.src='https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=200&q=80&auto=format&fit=crop&crop=center'" alt="Newborn" loading="lazy"/></div>
+      </div>
+      <span class="hl-label">Newborn</span>
+    </div>
+    <div class="hl-item rv d1">
+      <div class="hl-ring">
+        <div class="hl-inner"><img src="images/toddler.jpg" onerror="this.src='https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=200&q=80&auto=format&fit=crop&crop=center'" alt="Toddler" loading="lazy"/></div>
+      </div>
+      <span class="hl-label">Toddler</span>
+    </div>
+    <div class="hl-item rv d2">
+      <div class="hl-ring">
+        <div class="hl-inner"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=200&q=80&auto=format&fit=crop&crop=center" alt="Portraits" loading="lazy"/></div>
+      </div>
+      <span class="hl-label">Portraits</span>
+    </div>
+    <div class="hl-item rv d3">
+      <div class="hl-ring">
+        <div class="hl-inner"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=200&q=80&auto=format&fit=crop&crop=center" alt="Events" loading="lazy"/></div>
+      </div>
+      <span class="hl-label">Events</span>
+    </div>
+    <div class="hl-item rv d4">
+      <div class="hl-ring">
+        <div class="hl-inner"><img src="https://images.unsplash.com/photo-1492671527719-9d1e07e534b4?w=200&q=80&auto=format&fit=crop&crop=center" alt="BTS" loading="lazy"/></div>
+      </div>
+      <span class="hl-label">Behind Lens</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MAIN FEED ══ -->
+<section id="ig-feed">
+  <div class="feed-header">
+    <div class="sec-eyebrow rv">Latest Posts</div>
+    <h2 class="sec-title rv d1">Instagram <span>Feed</span></h2>
+    <div class="sec-rule rv d2"><div class="sr-line"></div><div class="sr-gem"></div><div class="sr-line"></div></div>
+  </div>
+
+  <div class="feed-filters rv d3">
+    <button class="ff-tab active" data-filter="all">All</button>
+    <button class="ff-tab" data-filter="wedding">Wedding</button>
+    <button class="ff-tab" data-filter="prewedding">Pre-Wedding</button>
+    <button class="ff-tab" data-filter="maternity">Maternity</button>
+    <button class="ff-tab" data-filter="newborn">Newborn</button>
+    <button class="ff-tab" data-filter="toddler">Toddler</button>
+    <button class="ff-tab" data-filter="portrait">Portrait</button>
+  </div>
+
+  <div class="ig-grid" id="igGrid">
+
+    <!-- Post 1 -->
+    <div class="ig-post rv" data-cat="prewedding" data-src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=1200&q=90&auto=format&fit=crop" data-caption="Golden hour love story — Araku Valley">
+      <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=700&q=80&auto=format&fit=crop" alt="Pre-Wedding" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Pre-Wedding</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>248</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>32</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="ig-post rv d1" data-cat="wedding" data-src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1200&q=90&auto=format&fit=crop" data-caption="Sacred vows, timeless moments">
+      <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=700&q=80&auto=format&fit=crop" alt="Wedding" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Wedding</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>412</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>56</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="ig-post rv d2" data-cat="maternity" data-src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=1200&q=90&auto=format&fit=crop" data-caption="The beautiful glow of new beginnings">
+      <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=700&q=80&auto=format&fit=crop" alt="Maternity" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Maternity</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>318</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>44</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 4 -->
+    <div class="ig-post rv d3" data-cat="newborn" data-src="https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=1200&q=90&auto=format&fit=crop" data-caption="Pure, precious, perfect — every tiny detail">
+      <img src="https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=700&q=80&auto=format&fit=crop" alt="Newborn" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Newborn</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>521</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>68</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 5 -->
+    <div class="ig-post rv d4" data-cat="toddler" data-src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=1200&q=90&auto=format&fit=crop" data-caption="Little stars shine the brightest">
+      <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=700&q=80&auto=format&fit=crop" alt="Toddler" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Toddler</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>289</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>37</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 6 -->
+    <div class="ig-post rv d1" data-cat="portrait" data-src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1200&q=90&auto=format&fit=crop" data-caption="Natural light, genuine soul">
+      <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=700&q=80&auto=format&fit=crop" alt="Portrait" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Portrait</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>376</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>49</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 7 -->
+    <div class="ig-post rv d2" data-cat="wedding" data-src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=90&auto=format&fit=crop" data-caption="Every vow, every tear, every first dance">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=700&q=80&auto=format&fit=crop" alt="Wedding" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Wedding</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>447</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>72</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 8 -->
+    <div class="ig-post rv d3" data-cat="prewedding" data-src="https://images.unsplash.com/photo-1525438160292-a4a860951216?w=1200&q=90&auto=format&fit=crop" data-caption="Before the big day — Gandikota magic">
+      <img src="https://images.unsplash.com/photo-1525438160292-a4a860951216?w=700&q=80&auto=format&fit=crop" alt="Pre-Wedding" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Pre-Wedding</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>284</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>38</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 9 -->
+    <div class="ig-post rv d4" data-cat="maternity" data-src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=1200&q=90&auto=format&fit=crop" data-caption="Radiance that words cannot capture">
+      <img src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=700&q=80&auto=format&fit=crop" alt="Maternity" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Maternity</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>339</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>41</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 10 -->
+    <div class="ig-post rv d1" data-cat="toddler" data-src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1200&q=90&auto=format&fit=crop" data-caption="1st birthday magic — unforgettable joy">
+      <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=700&q=80&auto=format&fit=crop" alt="Toddler" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Toddler</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>402</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>53</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 11 -->
+    <div class="ig-post rv d2" data-cat="portrait" data-src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=90&auto=format&fit=crop" data-caption="Beauty that speaks without words">
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=700&q=80&auto=format&fit=crop" alt="Portrait" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Portrait</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>267</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>28</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 12 -->
+    <div class="ig-post rv d3" data-cat="wedding" data-src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1200&q=90&auto=format&fit=crop" data-caption="Where two souls become one story">
+      <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=700&q=80&auto=format&fit=crop" alt="Wedding" loading="lazy"/>
+      <div class="ig-post-over">
+        <span class="ig-post-cat">Wedding</span>
+        <div class="ig-post-icons">
+          <span><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>495</span>
+          <span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>64</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /ig-grid -->
+</section>
+
+<!-- LIGHTBOX -->
+<div id="igLightbox">
+  <button class="igl-close" id="iglClose"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <button class="igl-arr" id="iglPrev"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+  <div class="igl-wrap">
+    <img id="iglImg" src="" alt=""/>
+    <div class="igl-meta">
+      <span class="igl-cat" id="iglCat"></span>
+      <span class="igl-caption" id="iglCaption"></span>
+    </div>
+  </div>
+  <button class="igl-arr" id="iglNext"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+  <div class="igl-ctr" id="iglCtr"></div>
+</div>
+
+<!-- ══ REELS ══ -->
+<section id="ig-reels">
+  <div class="hl-header">
+    <div class="sec-eyebrow rv">Short Films</div>
+    <h2 class="sec-title rv d1">Instagram <span>Reels</span></h2>
+    <div class="sec-rule rv d2"><div class="sr-line"></div><div class="sr-gem"></div><div class="sr-line"></div></div>
+  </div>
+  <div class="reel-grid">
+    <div class="reel-item rv d1">
+      <div class="reel-badge"><svg viewBox="0 0 24 24"><polygon points="23,7 16,12 23,17"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>REEL</div>
+      <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=500&q=80&auto=format&fit=crop" alt="Wedding Reel" loading="lazy"/>
+      <div class="reel-item-over">
+        <div class="reel-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="reel-duration">2:14</span>
+      </div>
+    </div>
+    <div class="reel-item rv d2">
+      <div class="reel-badge"><svg viewBox="0 0 24 24"><polygon points="23,7 16,12 23,17"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>REEL</div>
+      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=500&q=80&auto=format&fit=crop" alt="Maternity Reel" loading="lazy"/>
+      <div class="reel-item-over">
+        <div class="reel-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="reel-duration">1:47</span>
+      </div>
+    </div>
+    <div class="reel-item rv d3">
+      <div class="reel-badge"><svg viewBox="0 0 24 24"><polygon points="23,7 16,12 23,17"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>REEL</div>
+      <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=500&q=80&auto=format&fit=crop" alt="Toddler Reel" loading="lazy"/>
+      <div class="reel-item-over">
+        <div class="reel-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="reel-duration">1:32</span>
+      </div>
+    </div>
+    <div class="reel-item rv d4">
+      <div class="reel-badge"><svg viewBox="0 0 24 24"><polygon points="23,7 16,12 23,17"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>REEL</div>
+      <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=500&q=80&auto=format&fit=crop" alt="Pre-Wedding Reel" loading="lazy"/>
+      <div class="reel-item-over">
+        <div class="reel-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="reel-duration">2:58</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOLLOW SECTION ══ -->
+<section id="ig-follow">
+  <div class="follow-inner">
+    <div class="follow-left rv-l">
+      <div class="follow-left-img"></div>
+      <div class="follow-promo">
+        <div class="follow-promo-eyebrow">Join the Community</div>
+        <h3><em>@little_genie_photography</em>Follow Our Journey</h3>
+        <p>Behind every photograph is a story of trust, creativity, and genuine human connection. Follow us on Instagram for daily inspiration, behind-the-scenes moments, and the latest sessions straight from our studio.</p>
+        <a href="https://www.instagram.com/little_genie_photography/" target="_blank" class="follow-ig-btn">
+          <i class="fab fa-instagram"></i>
+          Follow on Instagram
+        </a>
+      </div>
+    </div>
+    <div class="follow-right rv-r">
+      <div class="follow-thumb"><img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400&q=80&auto=format&fit=crop" alt="" loading="lazy"/><div class="follow-thumb-over"><i class="fab fa-instagram"></i></div></div>
+      <div class="follow-thumb"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80&auto=format&fit=crop" alt="" loading="lazy"/><div class="follow-thumb-over"><i class="fab fa-instagram"></i></div></div>
+      <div class="follow-thumb"><img src="https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=400&q=80&auto=format&fit=crop" alt="" loading="lazy"/><div class="follow-thumb-over"><i class="fab fa-instagram"></i></div></div>
+      <div class="follow-thumb"><img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=400&q=80&auto=format&fit=crop" alt="" loading="lazy"/><div class="follow-thumb-over"><i class="fab fa-instagram"></i></div></div>
+      <div class="follow-thumb"><img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=400&q=80&auto=format&fit=crop" alt="" loading="lazy"/><div class="follow-thumb-over"><i class="fab fa-instagram"></i></div></div>
+      <div class="follow-thumb"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=400&q=80&auto=format&fit=crop" alt="" loading="lazy"/><div class="follow-thumb-over"><i class="fab fa-instagram"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW TO FIND US ══ -->
+<section id="ig-findus">
+  <div class="findus-inner">
+    <div class="findus-header">
+      <div class="sec-eyebrow rv" style="color:var(--gold3);">Stay Connected</div>
+      <h2 class="sec-title rv d1" style="color:var(--ink);">Find Us <span style="color:var(--gold3);">Everywhere</span></h2>
+      <div class="sec-rule rv d2">
+        <div class="sr-line" style="background:linear-gradient(90deg,transparent,var(--gold3));"></div>
+        <div class="sr-gem" style="background:var(--gold3);box-shadow:0 0 12px rgba(139,106,31,.5);"></div>
+        <div class="sr-line" style="background:linear-gradient(90deg,var(--gold3),transparent);"></div>
+      </div>
+    </div>
+    <div class="findus-grid">
+      <div class="fu-card rv d1">
+        <div class="fu-icon"><i class="fab fa-instagram" style="font-size:18px;color:var(--gold);"></i></div>
+        <div class="fu-title">Instagram</div>
+        <p class="fu-desc">Follow <strong style="color:var(--gold);">@little_genie_photography</strong> for daily posts, reels, stories, and behind-the-scenes glimpses from every session we shoot.</p>
+      </div>
+      <div class="fu-card rv d2">
+        <div class="fu-icon"><i class="fab fa-facebook-f" style="font-size:18px;color:var(--gold);"></i></div>
+        <div class="fu-title">Facebook</div>
+        <p class="fu-desc">Like our <strong style="color:var(--gold);">Facebook Page</strong> for album reveals, client testimonials, event announcements, and exclusive package offers for our community.</p>
+      </div>
+      <div class="fu-card rv d3">
+        <div class="fu-icon"><i class="fab fa-youtube" style="font-size:18px;color:var(--gold);"></i></div>
+        <div class="fu-title">YouTube</div>
+        <p class="fu-desc">Subscribe to our <strong style="color:var(--gold);">YouTube Channel</strong> for full cinematic wedding films, session highlights, and behind-the-lens documentary content.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- cream to dark -->
+<div style="height:64px;background:linear-gradient(180deg,var(--cream) 0%,var(--navy) 100%);"></div>
+
+<!-- ══ CTA ══ -->
+<section id="ig-cta">
+  <div class="cta-inner">
+    <div class="sec-eyebrow rv">Let's Connect</div>
+    <h2 class="sec-title rv d1">Loved What You <span>Saw?</span></h2>
+    <p class="cta-sub rv d2">Drop us a DM on Instagram or book your session directly. We'd love to create something beautiful for you.</p>
+    <div class="cta-btns rv d3">
+      <a href="https://www.instagram.com/little_genie_photography/" target="_blank" class="btn-ig">
+        <i class="fab fa-instagram"></i>
+        Follow on Instagram
+      </a>
+      <a href="contact.html" class="btn-o">Book a Session</a>
+    </div>
+  </div>
+</section>
+
+<!-- dark to darkest -->
+<div style="height:64px;background:linear-gradient(180deg,var(--navy) 0%,#040508 100%);"></div>
+
+<footer id="footer">
+ <img src="little-genie.png" class="footer-watermark" alt="" aria-hidden="true"/>
+<div class="footer-grid">
+
+<!-- BRAND -->
+<div class="footer-brand">
+<img src="little-genie.png" class="footer-logo">
+
+<p class="footer-desc">
+Timeless Photography Studio capturing weddings, <br>
+portraits and cinematic stories across Kurnool.
+</p>
+</div>
+
+
+
+<!-- NAVIGATION -->
+<div class="footer-links">
+
+<h4>Navigation</h4>
+
+<a href="#">Home</a>
+<a href="#story">About</a>
+<a href="#services">Services</a>
+<a href="Gallery.html">Gallery</a>
+<a href="#instagram">Instagram</a>
+<a href="Contact.html">Contact Us</a>
+
+</div>
+
+<!-- SERVICES -->
+<div class="footer-services">
+
+<h4>Our Services</h4>
+<a href="#">Pre-Wedding Shoots</a>
+<a href="#">Wedding Photography</a>
+<a href="#">Maternity Photography</a>
+<a href="#">Newborn Photography</a>
+<a href="#">Toddler Photography</a>
+<a href="#">Events Coverage</a>
+
+</div>
+
+<!-- CONTACT -->
+<div class="footer-contact">
+
+<h4>Contact</h4>
+
+<p>Kurnool, Andhra Pradesh</p>
+<p>+91 7893884757</p>
+<p>littlegenie@email.com</p>
+
+<a href="#" class="footer-book">Book a Session</a>
+
+</div>
+
+</div>
+
+
+<!-- SOCIAL -->
+
+<div class="footer-social">
+
+<a href="https://www.instagram.com/little_genie_photography/" target="_blank">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">YouTube</a>
+
+</div>
+
+
+<!-- BOTTOM -->
+
+<div class="footer-bottom">
+
+<p>
+© 2026 <span>Little Genie Photography</span>. All rights reserved.
+</p>
+
+<p class="footer-dev">
+Designed & Developed by
+<a href="https://navroy.github.io/Naveen-portfolio/" target="_blank">Navroy</a>
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- ══ FLOATING WHATSAPP ══ -->
+<div class="wa-float">
+  <div class="wa-tooltip">Chat on WhatsApp</div>
+  <a href="https://wa.me/919876543210?text=Hi%20Little%20Genie%2C%20I%27d%20like%20to%20book%20a%20session!" target="_blank" class="wa-btn" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+
+<!-- Bar HTML — paste just before </body> -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-bar-inner">
+ 
+    <!-- Call Us -->
+    <a href="tel:+91 7893884757" class="sb-btn sb-call" aria-label="Call Us">
+      <div class="sb-live"></div>
+      <div class="sb-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.07 2.38 2 2 0 012 .18h3a2 2 0 012 1.72c.13 1 .36 1.98.7 2.93a2 2 0 01-.45 2.11L6.09 8.1a16 16 0 006.72 6.72l1.16-1.16a2 2 0 012.11-.45c.95.34 1.93.57 2.93.7a2 2 0 011.99 2.01z"/>
+        </svg>
+      </div>
+      <span class="sb-label">Call Us</span>
+    </a>
+ 
+    <div class="sb-div"></div>
+ 
+    <!-- Quick Enquiry -->
+    <a href="contact.html" class="sb-btn sb-enq" aria-label="Quick Enquiry">
+      <div class="sb-icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+      </div>
+      <span class="sb-label"> Enquiry</span>
+    </a>
+ 
+    <div class="sb-div"></div>
+ 
+    <!-- WhatsApp -->
+    <a href="https://wa.me/+91 7893884757?text=Hi%20Little%20Genie%2C%20I%27d%20like%20to%20enquire%20about%20a%20session!" target="_blank" class="sb-btn sb-wa" aria-label="WhatsApp Us">
+      <div class="sb-icon">
+       <svg viewBox="0 0 24 24">
+  <path fill="currentColor" d="M20.52 3.48A11.9 11.9 0 0012.06 0C5.5 0 .17 5.33.17 11.89c0 2.1.55 4.15 1.59 5.95L0 24l6.46-1.69a11.9 11.9 0 005.6 1.43h.01c6.56 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.44-8.37zM12.07 21.5h-.01a9.6 9.6 0 01-4.89-1.34l-.35-.21-3.83 1.01 1.02-3.73-.23-.38a9.57 9.57 0 01-1.47-5.1c0-5.3 4.32-9.61 9.64-9.61 2.57 0 4.98 1 6.8 2.82a9.57 9.57 0 012.81 6.81c0 5.3-4.32 9.61-9.64 9.61zm5.29-7.22c-.29-.14-1.71-.84-1.98-.94-.27-.1-.47-.14-.67.14-.2.29-.77.94-.94 1.13-.17.2-.34.22-.63.08-.29-.14-1.22-.45-2.32-1.43-.86-.76-1.44-1.7-1.61-1.99-.17-.29-.02-.44.12-.59.13-.13.29-.34.44-.51.15-.17.2-.29.3-.48.1-.19.05-.36-.02-.5-.07-.14-.67-1.61-.92-2.2-.24-.57-.49-.49-.67-.5h-.57c-.2 0-.52.07-.79.36-.27.29-1.03 1.01-1.03 2.46 0 1.45 1.05 2.85 1.2 3.05.15.2 2.07 3.16 5.02 4.43.7.3 1.25.48 1.68.61.7.22 1.34.19 1.85.11.56-.08 1.71-.7 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.33z"/>
+</svg>
+       
+      </div>
+      <span class="sb-label">WhatsApp Us</span>
+    </a>
+ 
+  </div>
+</div>
+ 
+
+
+<a href="#" id="back-top"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></a>
+
+<script>
+/* CURSOR */
+const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
+(function t(){rx+=(mx-rx)*.13;ry+=(my-ry)*.13;cur2.style.left=rx+'px';cur2.style.top=ry+'px';requestAnimationFrame(t);})();
+document.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';cur2.style.width='56px';cur2.style.height='56px';});
+  el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';cur2.style.width='38px';cur2.style.height='38px';});
+});
+
+/* HEADER */
+window.addEventListener('scroll',()=>document.getElementById('hdr').classList.toggle('solid',scrollY>60),{passive:true});
+
+/* MOBILE MENU */
+const mb=document.getElementById('menuBtn'),nl=document.getElementById('navLinks');
+mb.addEventListener('click',()=>{mb.classList.toggle('active');nl.classList.toggle('open');});
+document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>{mb.classList.remove('active');nl.classList.remove('open');}));
+
+/* SCROLL REVEAL */
+const rvo=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');rvo.unobserve(e.target);}}),{threshold:.06});
+document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(el=>rvo.observe(el));
+
+/* FEED FILTER */
+const allPosts=document.querySelectorAll('.ig-post');
+document.querySelectorAll('.ff-tab').forEach(btn=>{
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.ff-tab').forEach(b=>b.classList.remove('active'));
+    this.classList.add('active');
+    const f=this.dataset.filter;
+    allPosts.forEach(p=>{
+      const show=f==='all'||p.dataset.cat===f;
+      p.style.display=show?'':'none';
+    });
+  });
+});
+
+/* LIGHTBOX */
+const lb=document.getElementById('igLightbox');
+const lbImg=document.getElementById('iglImg');
+const lbCat=document.getElementById('iglCat');
+const lbCap=document.getElementById('iglCaption');
+const lbCtr=document.getElementById('iglCtr');
+let ci=0,vis=[];
+
+function getVis(){return Array.from(allPosts).filter(p=>p.style.display!=='none');}
+
+function openLb(idx){
+  vis=getVis();ci=idx;
+  const post=vis[ci];
+  lbImg.style.opacity='0';
+  lbImg.src=post.dataset.src||post.querySelector('img').src;
+  lbImg.onload=()=>lbImg.style.opacity='1';
+  lbCat.textContent=post.dataset.cat?post.dataset.cat.charAt(0).toUpperCase()+post.dataset.cat.slice(1):'';
+  lbCap.textContent=post.dataset.caption||'';
+  lbCtr.textContent=(ci+1)+' / '+vis.length;
+  lb.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLb(){lb.classList.remove('open');document.body.style.overflow='';}
+function lbGo(d){
+  vis=getVis();ci=(ci+d+vis.length)%vis.length;
+  const post=vis[ci];
+  lbImg.style.opacity='0';
+  setTimeout(()=>{
+    lbImg.src=post.dataset.src||post.querySelector('img').src;
+    lbImg.onload=()=>lbImg.style.opacity='1';
+    lbCat.textContent=post.dataset.cat?post.dataset.cat.charAt(0).toUpperCase()+post.dataset.cat.slice(1):'';
+    lbCap.textContent=post.dataset.caption||'';
+    lbCtr.textContent=(ci+1)+' / '+vis.length;
+  },200);
+}
+
+allPosts.forEach(post=>{
+  post.addEventListener('click',()=>{vis=getVis();openLb(vis.indexOf(post));});
+});
+document.getElementById('iglClose').addEventListener('click',closeLb);
+document.getElementById('iglPrev').addEventListener('click',()=>lbGo(-1));
+document.getElementById('iglNext').addEventListener('click',()=>lbGo(1));
+lb.addEventListener('click',e=>{if(e.target===lb)closeLb();});
+document.addEventListener('keydown',e=>{
+  if(!lb.classList.contains('open'))return;
+  if(e.key==='Escape')closeLb();
+  if(e.key==='ArrowLeft')lbGo(-1);
+  if(e.key==='ArrowRight')lbGo(1);
+});
+let tx=0;
+lb.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;},{passive:true});
+lb.addEventListener('touchend',e=>{const d=tx-e.changedTouches[0].clientX;if(Math.abs(d)>50)lbGo(d>0?1:-1);},{passive:true});
+
+/* BACK TO TOP */
+const btt=document.getElementById('back-top');
+window.addEventListener('scroll',()=>btt.classList.toggle('show',scrollY>320),{passive:true});
+btt.addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
+
+/* STICKY BAR HIDE ON FOOTER */
+(function(){const bar=document.getElementById('stickyBar'),footer=document.querySelector('footer');if(!bar||!footer)return;new IntersectionObserver(entries=>entries.forEach(e=>{bar.style.opacity=e.isIntersecting?'0':'1';bar.style.pointerEvents=e.isIntersecting?'none':'all';}),{threshold:.1}).observe(footer);})();
+
+/* REEL ITEMS redirect to instagram on click */
+document.querySelectorAll('.reel-item').forEach(r=>{
+  r.addEventListener('click',()=>window.open('https://www.instagram.com/little_genie_photography/','_blank'));
+});
+</script>
+</body>
+</html>
